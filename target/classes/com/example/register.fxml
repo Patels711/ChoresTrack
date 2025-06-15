@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #d6ceb4ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.RegisterController">
+
+    <children>
+        <AnchorPane centerShape="false" layoutX="106.0" layoutY="66.0" prefHeight="344.0" prefWidth="426.0" snapToPixel="false" style="-fx-background-color: #b2b2cfff; -fx-background-radius: 30;" AnchorPane.leftAnchor="106.0">
+            <children>
+                <Label contentDisplay="RIGHT" layoutX="7.0" layoutY="-1.0" prefHeight="97.0" prefWidth="307.0" text="ChoreTracker">
+                    <font>
+                        <Font name="Lava Telugu Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="128.0" layoutY="106.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Register New Account">
+                    <font>
+                        <Font name="Lava Telugu Bold" size="1.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="newUsernameField" layoutX="142.0" layoutY="142.0" maxWidth="250" promptText="Choose Username" style="-fx-background-radius: 10;" />
+                <PasswordField fx:id="newPasswordField" layoutX="123.0" layoutY="176.0" maxWidth="250" prefHeight="26.0" prefWidth="198.0" promptText="Choose Password" style="-fx-background-radius: 10;" />
+                <ToggleButton layoutX="191.0" layoutY="230.0" onAction="#handleRegisterButton" style="-fx-background-color: rgb(42, 47, 51); -fx-text-fill: #8cca91; -fx-background-radius: 10;" text="Register" />
+                <ToggleButton layoutX="177.0" layoutY="270.0" onAction="#backToLogin" style="-fx-background-color: rgb(42, 47, 51); -fx-text-fill: #8cca91; -fx-background-radius: 10;" text="Back to Login" />
+            <ImageView fitHeight="92.0" fitWidth="118.0" layoutX="297.0" layoutY="11.0">
+               <image>
+                  <Image url="@../../Logo.png" />
+               </image>
+            </ImageView>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" height="62.27" offsetX="7.0" offsetY="7.0" radius="26.95" width="47.53" />
+            </effect>
+        </AnchorPane>
+    </children>
+</AnchorPane>
